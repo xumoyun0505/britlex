@@ -1,0 +1,115 @@
+.pricing-title {
+  color: rgba(0, 0, 0, 1);
+  font-size: 3vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper-pricing {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.1vw;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  justify-content: space-between;
+  width: 25.6vw;
+}
+
+.pricing-img {
+  height: 20.5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pricing-img > img {
+  width: 21vw;
+}
+
+.pricing-card-title {
+  color: rgba(38, 50, 56, 1);
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+.pricing-info {
+  color: rgba(143, 149, 165, 1);
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 1.8vw;
+}
+
+.pricing-btn {
+  width: 15vw;
+  height: 2.8vw;
+  background-color: rgba(238, 238, 238, 1);
+  font-weight: 400;
+  font-size: 1.1vw;
+  color: rgba(84, 98, 105, 1);
+  border: none;
+  border-radius: 5px;
+}
+
+.pricing-btn > span {
+  color: rgba(38, 50, 56, 1);
+  font-size: 1.8vw;
+}
+
+@media only screen and (max-width: 575px) {
+  .wrapper-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+
+  .pricing-img {
+    height: 50vw;
+  }
+
+  .pricing-img > img {
+    width: 50vw;
+  }
+
+  .pricing-title {
+    font-size: 5.2vw;
+  }
+
+  .pricing-card-title {
+    font-size: 4.1vw;
+    text-align: center;
+  }
+
+  .pricing-info {
+    font-size: 14px;
+    line-height: 5.6vw;
+    text-align: center;
+  }
+
+  .pricing-btn {
+    margin: 0 auto;
+    width: 35vw;
+    font-size: 2.7vw;
+    height: 7.8vw;
+  }
+
+  .pricing-btn > span {
+    font-size: 3.8vw;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .pricing-info {
+    font-size: 3vw;
+    line-height: 6.6vw;
+    text-align: center;
+  }
+}

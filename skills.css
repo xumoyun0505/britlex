@@ -1,0 +1,275 @@
+.skills {
+  margin: 6vw 0;
+}
+
+.skill-container {
+  margin-top: 3vw;
+  height: 55.8vw;
+  display: grid;
+  gap: 1.5vw;
+  grid-template-areas:
+    "box-1 box-2 box-3"
+    "box-1 box-4 box-4";
+}
+
+.skill-title {
+  font-size: 3vw;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+.box {
+  background-color: rgba(245, 245, 245, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 2vw;
+}
+
+.box > p {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  line-height: 2vw;
+  font-size: 1vw;
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+
+.box-4 {
+  grid-area: box-4;
+}
+
+.box-1 > img {
+  width: 24.3vw;
+}
+
+.box-2 > img {
+  width: 18.3vw;
+}
+
+.box-3 > img {
+  width: 23.1vw;
+  height: 17.8vw;
+}
+
+.box-4 {
+  display: flex;
+}
+
+.box-4 > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.img4 {
+  width: 23.8vw;
+}
+
+.box-title {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.box-1 > p {
+  width: 21.6vw;
+  margin-top: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  color: rgba(143, 149, 165, 1);
+  margin: 1.3vw 0 2.5vw 0;
+}
+
+.here {
+  color: rgba(143, 149, 165, 1);
+  line-height: 1.5vw;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+.box-2 > p {
+  width: 20.8vw;
+  color: rgba(143, 149, 165, 1);
+  margin: 1.5vw 0 2.3vw 0;
+}
+
+.box-3 > p {
+  width: 20.8vw;
+  color: rgba(143, 149, 165, 1);
+  margin: 1.5vw 0 2.3vw 0;
+}
+
+.box-btn {
+  width: 14.3vw;
+  height: 3.7vw;
+  background-color: rgba(38, 50, 56, 1);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+.box-4 > div:first-child > p {
+  line-height: 2vw;
+  font-family: Poppins, sans-serif;
+}
+
+@media only screen and (max-width: 575px) {
+  .skill-container {
+    display: grid;
+    grid-template-areas:
+      "box-1 box-2"
+      "box-3 box-4";
+    gap: 3vw;
+  }
+
+  .skill-title {
+    font-size: 4vw !important;
+  }
+
+  .box {
+    width: 41vw;
+    height: 105vw;
+    position: relative;
+    padding: 2vw;
+  }
+
+  .skill {
+    height: auto;
+  }
+
+  .skill-container {
+    height: auto;
+  }
+
+  .box-4 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+
+  .img4 {
+    width: 35vw;
+    height: 32vw;
+  }
+
+  .box-1 > img {
+    width: 32vw;
+  }
+
+  .box-2 > img {
+    width: 31vw;
+  }
+
+  .box-3 > img {
+    width: 34vw;
+    height: 32vw;
+  }
+
+  .box-title {
+    font-size: 4vw;
+    top: 300px;
+  }
+
+  .skill-container p {
+    font-size: 2.4vw;
+    line-height: 3.5vw;
+    width: 100%;
+  }
+
+  .here {
+    width: 37vw;
+    line-height: 3.5vw;
+  }
+
+  .box-btn {
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 4vw);
+    height: 8.7vw;
+    font-size: 3vw;
+  }
+
+  .box p {
+    line-height: 4vw !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .skill-container {
+    display: grid;
+    grid-template-areas:
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4";
+  }
+
+  .skill-title {
+    font-size: 7.5vw;
+  }
+
+  .box {
+    width: 100%;
+    height: 147vw;
+    padding: 3vw;
+  }
+
+  .box-1 {
+    height: 187vw;
+  }
+
+  .img4 {
+    width: 100%;
+    height: max-content;
+  }
+
+  .box-1 > img {
+    width: 100%;
+    height: max-content;
+  }
+
+  .box-2 > img {
+    width: 100%;
+    height: max-content;
+  }
+
+  .box-3 > img {
+    height: max-content;
+
+    width: 100%;
+  }
+
+  .box-title {
+    font-size: 5.6vw;
+  }
+
+  .skill-container > p {
+    font-size: 4.75vw;
+    line-height: 6.6vw;
+    margin: 3vw 0;
+  }
+
+  .box-btn {
+    width: 55vw;
+    height: 15.6vw;
+    font-size: 4.3vw;
+  }
+
+  .contact-btns > input {
+    font-size: 6vw;
+  }
+}
